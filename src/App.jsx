@@ -6,7 +6,7 @@ import { getRandomChar, getSpecialChar } from "./utils";
 
 function App() {
   const [values, setValues] = useForm({
-    length: 6,
+    length: 12,
     capital: true,
     small: true,
     number: false,
@@ -69,7 +69,7 @@ function App() {
             <input
               type="text"
               id="result"
-              placeholder="Min 6 Char"
+              placeholder="Min 12 Char"
               readOnly
               value={result}
             />
@@ -83,8 +83,8 @@ function App() {
               <input
                 type="number"
                 id="length"
-                min={6}
-                max={10}
+                min={12}
+                max={18}
                 name="length"
                 value={values.length}
                 onChange={setValues}
